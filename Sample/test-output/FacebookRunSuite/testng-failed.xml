@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FacebookRunSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FacebookRunTest1(failed)">
+    <parameter name="passWord" value="admin@12"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="userName" value="admin1@gmail.com"/>
+    <classes>
+      <class name="com.java.TestNG.Facebook">
+        <methods>
+          <include name="printLinksCount"/>
+          <include name="verifyLogin"/>
+          <include name="browserSetup"/>
+          <include name="printLinks"/>
+          <include name="printCurrentUrl"/>
+          <include name="tearDown"/>
+          <include name="printTitle"/>
+        </methods>
+      </class> <!-- com.java.TestNG.Facebook -->
+    </classes>
+  </test> <!-- FacebookRunTest1(failed) -->
+  <test thread-count="5" name="FacebookRunTest2(failed)">
+    <parameter name="passWord" value="admin@123"/>
+    <parameter name="browserName" value="edge"/>
+    <parameter name="userName" value="admin2@gmail.com"/>
+    <classes>
+      <class name="com.java.TestNG.Facebook">
+        <methods>
+          <include name="browserSetup"/>
+          <include name="verifyLogin" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.java.TestNG.Facebook -->
+    </classes>
+  </test> <!-- FacebookRunTest2(failed) -->
+  <test thread-count="5" name="FacebookRunTest3(failed)">
+    <parameter name="passWord" value="admin@1234"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="userName" value="admin3@gmail.com"/>
+    <classes>
+      <class name="com.java.TestNG.Facebook">
+        <methods>
+          <include name="browserSetup"/>
+          <include name="verifyLogin" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.java.TestNG.Facebook -->
+    </classes>
+  </test> <!-- FacebookRunTest3(failed) -->
+</suite> <!-- Failed suite [FacebookRunSuite] -->

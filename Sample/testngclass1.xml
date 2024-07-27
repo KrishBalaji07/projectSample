@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test1">
+
+    <classes>
+
+      <class name="com.java.TestNG.Class1">
+
+		  <methods>
+
+			  <exclude name="printTitle"></exclude>
+
+		  </methods>
+
+	  </class>
+
+      <class name="com.java.TestNG.Class2">
+
+		   <methods>
+
+			  <exclude name="printURL"></exclude>
+
+		  </methods>
+
+	  </class>
+
+      <class name="com.java.TestNG.Class3">
+
+		   <methods>
+
+			   <exclude name="printLinks"></exclude>
+
+		  </methods>	  
+
+	  </class>
+
+    </classes>
+
+  </test> 
+
+  
+
+  <test  name="Test2">
+
+    <classes>
+
+      <class name="com.java.TestNG.Class1">
+
+	  </class>
+
+      <class name="com.java.TestNG.Class2">
+
+	  </class>
+
+      <class name="com.java.TestNG.Class3">	  
+
+	  </class>
+
+    </classes>
+
+  </test> 
+  			 <!-- Test -->
+</suite> <!-- Suite -->
